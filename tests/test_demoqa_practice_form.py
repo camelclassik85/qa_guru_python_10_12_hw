@@ -9,7 +9,7 @@ from allure_commons.types import Severity
 @allure.label('Owner', 'AD')
 @allure.feature('Student Registration Form')
 @allure.story('Filling registration form')
-def test_fill_registration_form():
+def test_fill_registration_form(browser_config):
     ad = users.ad
     registration_page = RegistrationPage()
 
