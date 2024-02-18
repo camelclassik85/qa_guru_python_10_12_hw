@@ -23,6 +23,10 @@ class RegistrationPage:
     def open(self):
         browser.open("automation-practice-form")
 
+    @allure.step('Accept consent')
+    def accept_consent(self):
+        browser.element('.fc-cta-consent').click()
+
     @allure.step('Fill first name')
     def fill_first_name(self, user: User):
         self.first_name.should(be.blank).type(user.first_name)
