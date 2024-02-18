@@ -59,6 +59,7 @@ class RegistrationPage:
 
     @allure.step('Fill subjects')
     def fill_subjects(self, user: User):
+        browser.element('[for=hobbies-checkbox-2]').perform(command.js.scroll_into_view)
         self.subjects_input.should(be.blank).type(user.subjects[0]).press_enter()
         if len(user.subjects) >= 2:
             for sub in user.subjects[1:]:
