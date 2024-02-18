@@ -28,7 +28,6 @@ def browser_config():
     )
     browser.config.driver = driver
 
-
     yield
 
     attach.add_screenshot(browser)
