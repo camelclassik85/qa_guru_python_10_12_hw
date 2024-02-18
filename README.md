@@ -1,1 +1,1 @@
-# qa_guru_python_10_12_hw
+# qa_guru_python_10_12_hw_jenkins
